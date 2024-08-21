@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">38,574</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">day10.testngExample2.GoogleApplicationWithBeforeAfter</td><td><a href="#m0">testReportsPage</a></td><td rowspan="1">1724171055796</td><td rowspan="1">1472</td></tr><tr class="failedeven"><td><a href="#m1">testVtigerHomePage</a></td><td rowspan="1">1724171052311</td><td rowspan="1">49</td></tr><tr class="failedodd"><td rowspan="2">day10.testngExample2.GoogleApplicationWithBeforeAfterTest</td><td><a href="#m2">testGoogleLandingPage</a></td><td rowspan="1">1724171076247</td><td rowspan="1">10</td></tr><tr class="failedodd"><td><a href="#m3">testSearch</a></td><td rowspan="1">1724171076263</td><td rowspan="1">337</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">day10.testngExample2.AnnotationList</td><td><a href="#m4">f5</a></td><td rowspan="1">1724171048781</td><td rowspan="1">75</td></tr><tr class="passedodd"><td rowspan="3">day10.testngExample2.Assignment</td><td><a href="#m5">createPim</a></td><td rowspan="1">1724171058514</td><td rowspan="1">25</td></tr><tr class="passedodd"><td><a href="#m6">deletePim</a></td><td rowspan="1">1724171058613</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m7">updatePim</a></td><td rowspan="1">1724171058589</td><td rowspan="1">2</td></tr><tr class="passedeven"><td rowspan="4">day10.testngExample2.ClassLabelAnnotations</td><td><a href="#m8">testCase1</a></td><td rowspan="1">1724171076611</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m9">testCase2</a></td><td rowspan="1">1724171076649</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m10">testCase3</a></td><td rowspan="1">1724171076668</td><td rowspan="1">18</td></tr><tr class="passedeven"><td><a href="#m11">testCase4</a></td><td rowspan="1">1724171076689</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="1">day10.testngExample2.ExampleWithBeforeAfterSuite</td><td><a href="#m12">testCase1</a></td><td rowspan="1">1724171058627</td><td rowspan="1">2</td></tr><tr class="passedeven"><td rowspan="2">day10.testngExample2.GoogleApplicationWithBeforeAfterMethod</td><td><a href="#m13">testGoogleLandingPage</a></td><td rowspan="1">1724171064496</td><td rowspan="1">177</td></tr><tr class="passedeven"><td><a href="#m14">testSearch</a></td><td rowspan="1">1724171073559</td><td rowspan="1">2219</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">day10.testngExample2.GoogleApplicationWithBeforeAfter#testReportsPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Reports page not opened or its title got changed expected [Reports] but found [Google]
+	at day10.testngExample2.GoogleApplicationWithBeforeAfter.testReportsPage(GoogleApplicationWithBeforeAfter.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">day10.testngExample2.GoogleApplicationWithBeforeAfter#testVtigerHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Vtiger home page not opened or its title got changed expected [Dashboard] but found [Google]
+	at day10.testngExample2.GoogleApplicationWithBeforeAfter.testVtigerHomePage(GoogleApplicationWithBeforeAfter.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">day10.testngExample2.GoogleApplicationWithBeforeAfterTest#testGoogleLandingPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55322/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:310)
+	at reusableComponent.SeleniumUtility.getCurrentTitleOfApplication(SeleniumUtility.java:137)
+	at day10.testngExample2.GoogleApplicationWithBeforeAfterTest.testGoogleLandingPage(GoogleApplicationWithBeforeAfterTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">day10.testngExample2.GoogleApplicationWithBeforeAfterTest#testSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55322/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:310)
+	at reusableComponent.SeleniumUtility.getCurrentTitleOfApplication(SeleniumUtility.java:137)
+	at day10.testngExample2.GoogleApplicationWithBeforeAfterTest.testSearch(GoogleApplicationWithBeforeAfterTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">day10.testngExample2.AnnotationList#f5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">day10.testngExample2.Assignment#createPim</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">day10.testngExample2.Assignment#deletePim</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">day10.testngExample2.Assignment#updatePim</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">day10.testngExample2.ClassLabelAnnotations#testCase1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">day10.testngExample2.ClassLabelAnnotations#testCase2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">day10.testngExample2.ClassLabelAnnotations#testCase3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">day10.testngExample2.ClassLabelAnnotations#testCase4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">day10.testngExample2.ExampleWithBeforeAfterSuite#testCase1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">day10.testngExample2.GoogleApplicationWithBeforeAfterMethod#testGoogleLandingPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">day10.testngExample2.GoogleApplicationWithBeforeAfterMethod#testSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="11" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-20T21:54:00 IST" name="Suite" finished-at="2024-08-20T21:54:38 IST" duration-ms="38574">
+    <groups>
+    </groups>
+    <test started-at="2024-08-20T21:54:00 IST" name="Test" finished-at="2024-08-20T21:54:38 IST" duration-ms="38574">
+      <class name="day10.testngExample2.ExampleWithBeforeAfterSuite">
+        <test-method is-config="true" signature="preconditionOfSuite()[pri:0, instance:day10.testngExample2.ExampleWithBeforeAfterSuite@69e153c5]" started-at="2024-08-20T21:54:00 IST" name="preconditionOfSuite" finished-at="2024-08-20T21:54:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconditionOfSuite -->
+        <test-method signature="testCase1()[pri:0, instance:day10.testngExample2.ExampleWithBeforeAfterSuite@69e153c5]" started-at="2024-08-20T21:54:18 IST" name="testCase1" finished-at="2024-08-20T21:54:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="postconditionOfSuite()[pri:0, instance:day10.testngExample2.ExampleWithBeforeAfterSuite@69e153c5]" started-at="2024-08-20T21:54:39 IST" name="postconditionOfSuite" finished-at="2024-08-20T21:54:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postconditionOfSuite -->
+      </class> <!-- day10.testngExample2.ExampleWithBeforeAfterSuite -->
+      <class name="day10.testngExample2.GoogleApplicationWithBeforeAfterTest">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterTest@25ce9dc4]" started-at="2024-08-20T21:54:05 IST" name="startUp" finished-at="2024-08-20T21:54:08 IST" duration-ms="3155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="testGoogleLandingPage()[pri:1, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterTest@25ce9dc4]" started-at="2024-08-20T21:54:36 IST" name="testGoogleLandingPage" finished-at="2024-08-20T21:54:36 IST" duration-ms="10" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55322/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55322/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:310)
+at reusableComponent.SeleniumUtility.getCurrentTitleOfApplication(SeleniumUtility.java:137)
+at day10.testngExample2.GoogleApplicationWithBeforeAfterTest.testGoogleLandingPage(GoogleApplicationWithBeforeAfterTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogleLandingPage -->
+        <test-method signature="testSearch()[pri:2, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterTest@25ce9dc4]" started-at="2024-08-20T21:54:36 IST" name="testSearch" finished-at="2024-08-20T21:54:36 IST" duration-ms="337" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55322/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\Asus\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55322/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:310)
+at reusableComponent.SeleniumUtility.getCurrentTitleOfApplication(SeleniumUtility.java:137)
+at day10.testngExample2.GoogleApplicationWithBeforeAfterTest.testSearch(GoogleApplicationWithBeforeAfterTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterTest@25ce9dc4]" started-at="2024-08-20T21:54:38 IST" name="tearDown" finished-at="2024-08-20T21:54:38 IST" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- day10.testngExample2.GoogleApplicationWithBeforeAfterTest -->
+      <class name="day10.testngExample2.Assignment">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:00 IST" name="openBrowser" finished-at="2024-08-20T21:54:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="createPim()[pri:1, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="createPim" finished-at="2024-08-20T21:54:18 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPim -->
+        <test-method is-config="true" signature="loginAndNavigateToPimPage()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="loginAndNavigateToPimPage" finished-at="2024-08-20T21:54:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndNavigateToPimPage -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="logout" finished-at="2024-08-20T21:54:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="loginAndNavigateToPimPage()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="loginAndNavigateToPimPage" finished-at="2024-08-20T21:54:18 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndNavigateToPimPage -->
+        <test-method signature="updatePim()[pri:2, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="updatePim" finished-at="2024-08-20T21:54:18 IST" depends-on-methods="day10.testngExample2.Assignment.createPim" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePim -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="logout" finished-at="2024-08-20T21:54:18 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="deletePim()[pri:3, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="deletePim" finished-at="2024-08-20T21:54:18 IST" depends-on-methods="day10.testngExample2.Assignment.createPim" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePim -->
+        <test-method is-config="true" signature="loginAndNavigateToPimPage()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="loginAndNavigateToPimPage" finished-at="2024-08-20T21:54:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndNavigateToPimPage -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:18 IST" name="logout" finished-at="2024-08-20T21:54:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:day10.testngExample2.Assignment@7674f035]" started-at="2024-08-20T21:54:36 IST" name="closeBrowser" finished-at="2024-08-20T21:54:36 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- day10.testngExample2.Assignment -->
+      <class name="day10.testngExample2.GoogleApplicationWithBeforeAfter">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:00 IST" name="startUp" finished-at="2024-08-20T21:54:05 IST" duration-ms="5022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="login()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:08 IST" name="login" finished-at="2024-08-20T21:54:12 IST" duration-ms="3317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testVtigerHomePage()[pri:1, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:12 IST" name="testVtigerHomePage" finished-at="2024-08-20T21:54:12 IST" duration-ms="49" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Vtiger home page not opened or its title got changed expected [Dashboard] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Vtiger home page not opened or its title got changed expected [Dashboard] but found [Google]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at day10.testngExample2.GoogleApplicationWithBeforeAfter.testVtigerHomePage(GoogleApplicationWithBeforeAfter.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVtigerHomePage -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:12 IST" name="logout" finished-at="2024-08-20T21:54:13 IST" duration-ms="1416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:13 IST" name="login" finished-at="2024-08-20T21:54:15 IST" duration-ms="2015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testReportsPage()[pri:2, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:15 IST" name="testReportsPage" finished-at="2024-08-20T21:54:17 IST" duration-ms="1472" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Reports page not opened or its title got changed expected [Reports] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Reports page not opened or its title got changed expected [Reports] but found [Google]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at day10.testngExample2.GoogleApplicationWithBeforeAfter.testReportsPage(GoogleApplicationWithBeforeAfter.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReportsPage -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:17 IST" name="logout" finished-at="2024-08-20T21:54:18 IST" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfter@8f2ef19]" started-at="2024-08-20T21:54:36 IST" name="tearDown" finished-at="2024-08-20T21:54:38 IST" duration-ms="1383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- day10.testngExample2.GoogleApplicationWithBeforeAfter -->
+      <class name="day10.testngExample2.GoogleApplicationWithBeforeAfterMethod">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterMethod@173ed316]" started-at="2024-08-20T21:54:18 IST" name="startUp" finished-at="2024-08-20T21:54:24 IST" duration-ms="5861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="testGoogleLandingPage()[pri:1, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterMethod@173ed316]" started-at="2024-08-20T21:54:24 IST" name="testGoogleLandingPage" finished-at="2024-08-20T21:54:24 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogleLandingPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterMethod@173ed316]" started-at="2024-08-20T21:54:24 IST" name="tearDown" finished-at="2024-08-20T21:54:27 IST" duration-ms="3115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterMethod@173ed316]" started-at="2024-08-20T21:54:27 IST" name="startUp" finished-at="2024-08-20T21:54:33 IST" duration-ms="5763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="testSearch()[pri:2, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterMethod@173ed316]" started-at="2024-08-20T21:54:33 IST" name="testSearch" finished-at="2024-08-20T21:54:35 IST" duration-ms="2219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:day10.testngExample2.GoogleApplicationWithBeforeAfterMethod@173ed316]" started-at="2024-08-20T21:54:35 IST" name="tearDown" finished-at="2024-08-20T21:54:36 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- day10.testngExample2.GoogleApplicationWithBeforeAfterMethod -->
+      <class name="day10.testngExample2.AnnotationList">
+        <test-method is-config="true" signature="f1()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:00 IST" name="f1" finished-at="2024-08-20T21:54:00 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method is-config="true" signature="f2()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:00 IST" name="f2" finished-at="2024-08-20T21:54:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method is-config="true" signature="f3()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:08 IST" name="f3" finished-at="2024-08-20T21:54:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method is-config="true" signature="f4()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:08 IST" name="f4" finished-at="2024-08-20T21:54:08 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f4 -->
+        <test-method signature="f5()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:08 IST" name="f5" finished-at="2024-08-20T21:54:08 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f5 -->
+        <test-method is-config="true" signature="f9()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:08 IST" name="f9" finished-at="2024-08-20T21:54:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f9 -->
+        <test-method is-config="true" signature="f8()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:08 IST" name="f8" finished-at="2024-08-20T21:54:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f8 -->
+        <test-method is-config="true" signature="f7()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:36 IST" name="f7" finished-at="2024-08-20T21:54:36 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f7 -->
+        <test-method is-config="true" signature="f6()[pri:0, instance:day10.testngExample2.AnnotationList@53fe15ff]" started-at="2024-08-20T21:54:39 IST" name="f6" finished-at="2024-08-20T21:54:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f6 -->
+      </class> <!-- day10.testngExample2.AnnotationList -->
+      <class name="day10.testngExample2.ClassLabelAnnotations">
+        <test-method signature="testCase1()[pri:0, instance:day10.testngExample2.ClassLabelAnnotations@17f62e33]" started-at="2024-08-20T21:54:36 IST" name="testCase1" finished-at="2024-08-20T21:54:36 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method signature="testCase2()[pri:0, instance:day10.testngExample2.ClassLabelAnnotations@17f62e33]" started-at="2024-08-20T21:54:36 IST" name="testCase2" finished-at="2024-08-20T21:54:36 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method signature="testCase3()[pri:0, instance:day10.testngExample2.ClassLabelAnnotations@17f62e33]" started-at="2024-08-20T21:54:36 IST" name="testCase3" finished-at="2024-08-20T21:54:36 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method signature="testCase4()[pri:0, instance:day10.testngExample2.ClassLabelAnnotations@17f62e33]" started-at="2024-08-20T21:54:36 IST" name="testCase4" finished-at="2024-08-20T21:54:36 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+      </class> <!-- day10.testngExample2.ClassLabelAnnotations -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
