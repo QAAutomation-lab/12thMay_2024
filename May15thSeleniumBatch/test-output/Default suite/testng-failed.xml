@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day10.testngExample2.GoogleApplicationWithBeforeAfter">
+      <class name="day10.ddt.NewTest">
         <methods>
-          <include name="startUp"/>
-          <include name="logout"/>
-          <include name="testReportsPage"/>
-          <include name="testVtigerHomePage"/>
-          <include name="login"/>
-          <include name="tearDown"/>
+          <include name="testActitimeLogin"/>
+          <include name="precondition"/>
+          <include name="postCondition"/>
         </methods>
-      </class> <!-- day10.testngExample2.GoogleApplicationWithBeforeAfter -->
+      </class> <!-- day10.ddt.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
