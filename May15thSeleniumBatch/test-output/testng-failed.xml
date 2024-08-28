@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day10.ddt.NewTest">
+      <class name="day11.exdentreport.ActitimeLoginValidation">
         <methods>
+          <include name="postcondition"/>
           <include name="testActitimeLogin"/>
           <include name="precondition"/>
-          <include name="postCondition"/>
         </methods>
-      </class> <!-- day10.ddt.NewTest -->
+      </class> <!-- day11.exdentreport.ActitimeLoginValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
