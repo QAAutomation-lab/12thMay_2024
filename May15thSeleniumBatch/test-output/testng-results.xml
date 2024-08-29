@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-28T21:48:27 IST" name="Default suite" finished-at="2024-08-28T21:48:36 IST" duration-ms="9040">
+  <suite started-at="2024-08-29T22:00:00 IST" name="Default suite" finished-at="2024-08-29T22:00:18 IST" duration-ms="18348">
     <groups>
     </groups>
-    <test started-at="2024-08-28T21:48:27 IST" name="Default test" finished-at="2024-08-28T21:48:36 IST" duration-ms="9040">
-      <class name="day11.exdentreport.ActitimeLoginValidation">
-        <test-method is-config="true" signature="precondition()[pri:0, instance:day11.exdentreport.ActitimeLoginValidation@2a265ea9]" started-at="2024-08-28T21:48:27 IST" name="precondition" finished-at="2024-08-28T21:48:27 IST" duration-ms="498" status="PASS">
+    <test started-at="2024-08-29T22:00:00 IST" name="Default test" finished-at="2024-08-29T22:00:18 IST" duration-ms="18348">
+      <class name="day12.switchingExamples.Example3">
+        <test-method signature="testJavaScriptPromptPopup()[pri:0, instance:day12.switchingExamples.Example3@576d5deb]" started-at="2024-08-29T22:00:00 IST" name="testJavaScriptPromptPopup" finished-at="2024-08-29T22:00:18 IST" duration-ms="18219" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method signature="testActitimeLogin()[pri:0, instance:day11.exdentreport.ActitimeLoginValidation@2a265ea9]" started-at="2024-08-28T21:48:27 IST" name="testActitimeLogin" finished-at="2024-08-28T21:48:35 IST" duration-ms="7901" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testActitimeLogin -->
-        <test-method is-config="true" signature="postcondition()[pri:0, instance:day11.exdentreport.ActitimeLoginValidation@2a265ea9]" started-at="2024-08-28T21:48:35 IST" name="postcondition" finished-at="2024-08-28T21:48:36 IST" duration-ms="530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postcondition -->
-      </class> <!-- day11.exdentreport.ActitimeLoginValidation -->
+        </test-method> <!-- testJavaScriptPromptPopup -->
+      </class> <!-- day12.switchingExamples.Example3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
